@@ -1,0 +1,171 @@
+.rodape__info {
+    background-color: var(--azul-background);
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 1rem;
+}
+
+.rodape__logo {
+    height: 50px;
+    margin-bottom: 1rem;
+}
+
+.rodape__detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.rodape__detalhes--item {
+    margin-bottom: 1rem;
+}
+
+.rodape__detalhes--link {
+    color: var(--preto-texto);
+    text-decoration: none;
+    font-family: var(--raleway);
+    font-weight: 500;
+}
+
+
+.rodape__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.rodape__form--titulo {
+    font-family: var(--raleway);
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+
+.rodape__form--nome {
+    height: calc(56px - 1.6rem);
+    background-color: var(--branco-fundo);
+    color: var(--cinza-escuro);
+    border: none;
+    padding: .8rem;
+    margin-bottom: 1rem;
+    font-family: var(--raleway);
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.rodape__form--mensagem {
+    height: calc(82px - 1.6rem);
+    background-color: var(--branco-fundo);
+    color: var(--cinza-escuro);
+    border: none;
+    margin-bottom: 1rem;
+    padding: .8rem;
+    font-family: var(--raleway);
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.rodape__form--mensagem:focus, .rodape__form--nome:focus {
+    outline: none;
+    border: 1px solid var(--azul-padrão);
+}
+
+.rodape__form--botao {
+    width: 151px;
+    padding: 1rem;
+    color: var(--branco-fundo);
+    background-color: var(--azul-padrão);
+    border: none;
+
+    font-family: var(--raleway);
+    font-weight: 600;
+}
+
+.rodape__desenvolvido {
+    padding: 2rem 3rem;
+    height: auto;
+
+    font-family: var(--raleway);
+    font-weight: 500;
+    color: var(--preto-texto);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape__form--botao:hover {
+    background-color: var(--azul-hover);
+}
+
+@media screen and (min-width: 540px) {
+    .rodape__info {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: start;
+        height: calc(364px - 2rem);
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .rodape__logo {
+        align-items: baseline;
+    }
+
+    .rodape__detalhes  {
+        width: 50%;
+        align-items: baseline;
+    }
+
+    .rodape__form {
+        width: 50%;
+    }
+
+    .rodape__detalhes--item {
+        margin-bottom: 1.5rem;
+    }
+
+
+}
+
+
+@media screen and (min-width: 970px) {
+    .rodape__info {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        height: calc(364px - 8rem);
+        padding: 4rem 9.5rem;
+        height: 100%;
+    }
+
+    .rodape_item {
+        margin-right: 3%;
+    }
+
+    .rodape__logo {
+        align-items: baseline;
+    }
+
+    .rodape__form {
+        width: 40%;
+    }
+
+    .rodape__detalhes  {
+        width: 29%;
+        align-items: baseline;
+    }
+
+    .rodape__logo {
+        width: 22%;
+    }
+
+    .rodape__detalhes--item {
+        margin-bottom: 1.5rem;
+    }
+
+}
