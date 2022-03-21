@@ -1,0 +1,159 @@
+.produtos {
+    font-family: var(--raleway);
+    padding: 2rem 1rem;
+    background-color: var(--cinza-bg);
+}
+
+.produtos__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.produtos__info--botao {
+    background-color: var(--azul-padrão);
+    padding: 1rem;
+    color: var(--branco-fundo);
+    text-decoration: none;
+}
+
+.produtos__info--botao:hover {
+    background-color: var(--azul-hover);
+}
+
+.produtos__info--titulo {
+    display: flex;
+    align-items: flex-end;
+    font-weight: 700;
+    font-size: 1.37rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    
+}
+
+.secao__card--link {
+    color: var(--preto-texto);
+}
+
+.secao__imagem {
+    position: relative;
+}
+
+.secao__imagem--icons {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+}
+
+.secao__imagem--icons-lixo {
+    margin-right: 1rem;
+}
+
+.secao__cards {
+    justify-content: start;
+}
+
+.secao__card {
+    width: calc(50% - 1rem);
+}
+
+.secao__card:nth-child(n) {
+    margin-right: 2rem;
+}
+
+.secao__card:nth-child(2n) {
+    margin-right: 0rem;
+}
+
+
+@media screen and (min-width: 540px) {
+    .produtos {
+        padding: 2rem 2rem;
+    }
+
+    .secao__card{
+        width: calc(33.33% - 1rem);
+        margin-bottom: 3rem;
+        height: 15rem;
+    }
+
+    .secao {
+        padding: 0 2rem;
+    }
+
+    .produtos__info--titulo {
+        width: 50%;
+    }
+
+    .secao__card:nth-child(n) {
+        margin-right: 1.5rem;
+    }
+    
+    .secao__card:nth-child(3n+2) {
+        margin-right: 0rem;
+    }
+    .secao__card:nth-child(3) {
+        margin-right: 0rem;
+    }
+    .secao__card:nth-child(2) {
+        margin-right: 1.5rem;
+    }
+
+}
+
+@media screen and (min-width: 750px) {
+    .secao__card{
+        width: calc(25% - 1rem);
+    }
+
+    .secao__card:nth-child(n) {
+        margin-right: 1.33rem;
+    }
+
+    .secao__card:nth-child(4n) {
+        margin-right: 0rem;
+    }
+
+}
+
+@media screen and (min-width: 970px) {
+    .secao__card{
+        width: calc(20% - 1rem);
+
+    }
+
+    .secao__card:nth-child(n) {
+        margin-right: 1.2rem;
+    }
+
+    .secao__card:nth-child(5n) {
+        margin-right: 0rem;
+    }
+
+    .produtos {
+        padding: 2rem 9.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1100px) {
+    .secao__card{
+        width: calc(16.66% - 1rem);
+
+    }
+
+    .secao__card:nth-child(n) {
+        margin-right: 1.2rem;
+    }
+
+    .secao__card:nth-child(6n) {
+        margin-right: 0rem;
+    }
+
+    .produtos {
+        padding: 2rem 9.5rem;
+    }
+}
