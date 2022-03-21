@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/cabecalho.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/novo-produto.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <title>Alura Geek</title>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <h1>
+            <a href="index.html">
+                <img src="/imagens/logo/logo3x.png" alt="Logomarca da AluraGeek que possui um controle de video game"
+                    class="cabecalho__logo">
+            </a>
+        </h1>
+        <a href="login.html" class="cabecalho__login">Menu Administrador</a>
+        <div class="cabecalho__pesquisa">
+            <input type="text" placeholder="O que deseja encontrar?" class="cabecalho__pesquisa--input">
+            <a href="#" class="cabecalho__pesquisa--link">
+                <img src="/imagens/pesquisar/pesquisa.svg" alt="Imagem de lupa dentro da área de pesquisar produtos"
+                    class="cabecalho__pesquisa--imagem">
+            </a>
+        </div>
+    </header>
+
+
+    <!-- <main class="conteudo">
+        <p class="produto_titulo">Adicionar novo produto</p>
+        <form action="" class="login_form">
+            <input type="email" placeholder="Escreva seu email" class="login__form--email campo">
+            <input type="password" placeholder="Escreva sua senha" class="login__form--senha campo">
+            <button class="login__form--botao">Entrar</button>
+        </form>
+    </main> -->
+
+
+    <main>
+
+        <section id="administrador">
+
+            <div class="add-produto">
+                <h1>Adicionar novo produto</h1>
+                <div>
+                    <img src="/imagens/img-foto.svg" alt="Ícone de imagem">
+                    <p>Arraste para adicionar uma <br> imagem para o produto</p>
+                </div>
+                <p class="ou">Ou</p>
+                <button>Procure no seu computador</button>
+
+            <fieldset id="lista">
+                <form id="form-adm">
+                    <label for="nome-produto" class="nome-produto"></label>
+
+                        <input type="text" name="Nome Produto" id="nome-produto" placeholder="Nome do Produto">
+
+                    <label for="preco" class="preco"></label>
+
+                        <input type="text" name="Preço" id="preco" placeholder="Preço do Produto">
+
+                    <label for="descricao" class="descricao-produto"></label>
+
+                        <input type="text" name="Descrição" id="descricao" placeholder="Descrição do Produto">
+
+                    <label for="submit" class="submit"> </label>
+                        <input type="submit" name="botao" id="submit" value="Adicionar produto">
+
+                </form>
+            </fieldset>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="rodape">
+        <div class="rodape__info">
+            <img src="/imagens/logo/logo.png" alt="Logo Alura Geek" class="rodape__logo rodape_item">
+            <ul class="rodape__detalhes rodape_item">
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Quem somos nós</a></li>
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Política de privacidade</a></li>
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Programa fidelidade</a></li>
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Nossas Lojas</a></li>
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Quero ser franqueado</a></li>
+                <li class="rodape__detalhes--item"><a href="" class="rodape__detalhes--link">Anuncie aqui</a></li>
+            </ul>
+            <form action="" class="rodape__form rodape_item">
+                <label class="rodape__form--titulo" for="">Fale Conosco</label>
+                <input class="rodape__form--nome" placeholder="Nome" type="text">
+                <textarea class="rodape__form--mensagem" placeholder="Escreva sua mensagem" name="" id="" cols="30" rows="10"></textarea>
+                <button class="rodape__form--botao">Enviar Mensagem</button>
+            </form>
+        </div>
+        <div class="rodape__desenvolvido">
+            <p>Desenvolvido por Marcos Capiberibe</p>
+            <p>Copyright © 2022</p>
+            </div>
+    </footer>
+
+    
+</body>
+</html>

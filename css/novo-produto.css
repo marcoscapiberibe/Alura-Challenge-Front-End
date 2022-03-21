@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#administrador {
+    background: #E5E5E5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 620px;
+    position: relative;
+    margin-top: 1.5rem;
+}
+
+.add-produto h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: .5em;
+}
+
+.add-produto div {
+    background: #FFFFFF;
+    border: 2px dashed #C8C8C8;
+    width: 282px;
+    height: 152px;
+    text-align: center;
+    align-items: center;
+    padding: 30px 20px 20px 20px;
+}
+
+.add-produto img {
+    display: block;
+    margin: auto auto 1.2em auto;
+}
+
+.add-produto div, p, button  {
+    display: inline-block;
+}
+
+.add-produto div p {
+    color: #6B6B6B;
+}
+
+.ou {
+    margin: 4em .6em 0 .6em;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    position: absolute;
+}
+
+.add-produto button {
+    height: 51px;
+    width: 239px;
+    padding: 16px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    cursor: pointer;
+    margin: 3.4em 0 0 3em;
+    position: absolute;
+}
+
+#form-adm {
+    margin: 0 auto;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+#nome-produto, #preco {
+    height: 56px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 1rem 25rem 1rem 1rem;
+}
+
+.nome-produto, .preco {
+    color: #6B6B6B;
+}
+
+.descricao-produto {
+    display: none;
+}
+
+#descricao {
+    padding: 1rem 25rem 3rem 1rem;
+    height: 82px;
+    margin-block-end: 1rem ;
+}
+
+#nome-produto, #preco, #descricao {
+    border-bottom: 2px solid #C8C8C8;
+    border-style: none none inset none;
+    border-radius: 4px 4px 0px 0px;
+
+}
+
+#submit {
+    height: 51px;
+    width: 77%;
+    padding: 1rem 1rem 1rem 1rem;
+    background: #2A7AE4;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    font-size: 1rem;
+}
